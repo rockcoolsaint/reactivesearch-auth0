@@ -6,7 +6,7 @@ class Auth {
 	auth0 = new auth0.WebAuth({
 		domain: 'reactivesearch-demo.auth0.com',
 		clientID: 'oiGMWuEEZNUBYpbX0-DnMVhdE8pHwkkX',
-		redirectUri: process.env.NODE_ENV === 'development' ? 'http://localhost:3000/callback' : 'https://appbaseio-apps.github.io/reactivesearch-demo.auth0.com/callback',
+		redirectUri: process.env.NODE_ENV === 'development' ? 'http://localhost:3000/callback' : 'https://reactivesearch-auth0.herokuapp.com/reactivesearch-demo.auth0.com/callback',
 		audience: 'https://reactivesearch-demo.auth0.com/userinfo',
 		responseType: 'token id_token',
 		scope: 'openid'
